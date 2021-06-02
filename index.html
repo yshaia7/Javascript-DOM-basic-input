@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Yeshaya Winstock</title>
+    <script src="button.js"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="col-12 col-md-4">
+        <a href="readme.html">link to my readme</a>
+    </div>
+
+    <div class="jumbotron">
+        <h1>Internet Programming - Exercise 2</h1>
+    </div>
+
+    <div class="alert alert-danger"
+         role="alert" id="errorlist">
+    </div>
+    <div id="information">
+        <h1 id="personalData">Summary of your data</h1>
+        <div class="alert alert-info" role="alert" id="infolist"></div>
+        <h1 id="childData">Children:</h1>
+
+        <div class="alert alert-warning"
+             role="alert" id="alertWarning">
+        </div>
+        <a href="index.html" class="btn btn-info" role="button">Done!</a>
+    </div>
+    <form id="my-form">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Personal Information</h1>
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" class="form-control" id="firstname">
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" class="form-control" id="lastname">
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Birth Year</label>
+                    <input type="text" class="form-control" id="birthdate">
+                </div>
+                <div class="form-group">
+                    <label for="immigration">Immigration Year</label>
+                    <input type="text" class="form-control" id="immigration">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1>Children</h1>
+                <div class="form-group">
+                    <label for="children">Enter the number of children and their respective names
+                        <br>
+                            Number of children
+                        <br>
+                    </label>
+                    <input type="text" class="form-control" id="children">
+                </div>
+                    <ol id="childinfo">
+                    </ol>
+            </div>
+        </div>
+        <button type="button" id="send" data-dismiss="alert" class="btn btn-primary">Send</button>
+    </form>
+</div>
+</body>
+</html>
